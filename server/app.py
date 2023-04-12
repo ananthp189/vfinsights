@@ -13,8 +13,8 @@ import datetime
 
 #create api   
 app = Flask(__name__)
-@app.route('/',methods = ["GET","POST"])
-def insights():
+@app.route('/')
+def index():
     #set api calling parameters 
     domain= request.args.get('url') #get domain value from request  
     API_Key="d957b713f04241f39622786961f902df"
