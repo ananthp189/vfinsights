@@ -615,4 +615,5 @@ def index():
     conn.commit()
     conn.close()
     return "success"
-app.run(host="localhost", port=8000, debug=True)
+if __name__ == '__main__':
+    app.run()
